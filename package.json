@@ -1,0 +1,28 @@
+{
+  "name": "discord-team-bot",
+  "version": "1.0.0",
+  "description": "Discord random team assignment bot with slash commands and reroll button",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "register:guild": "node src/register-commands.js guild",
+    "register:global": "node src/register-commands.js global",
+    "check": "node --check src/index.js && node --check src/register-commands.js && node --check src/utils.js && node --check src/commands.js"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "teams",
+    "random"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.6.1"
+  }
+}
